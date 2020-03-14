@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__copyright {
+    margin: 0;
+    padding: 0.25rem;
+  }
+
+  &__shoutout {
+    margin: 0;
+    padding: 0.25rem;
+    padding-bottom: 1rem;
+  }
+}
