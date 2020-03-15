@@ -1,4 +1,5 @@
 ---
+path: /about/
 template: About
 title: About
 ---

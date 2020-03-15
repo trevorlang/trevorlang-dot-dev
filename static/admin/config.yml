@@ -8,30 +8,80 @@ public_folder: assets
 collections:
 - name: post
   label: Post
+  slug: "{{slug}}"
   folder: content/posts
   create: true
   fields:
   - name: template
     label: Template
     widget: hidden
-    default: post
+    default: Post
+  - name: path
+    label: Path
+    widget: hidden
+    default: "{{slug}}"
   - name: date
     label: Date
     widget: date
+  - name: post_type
+    label: Post Type
+    widget: "select"
+    options: ["Video", "Gallery"]
+    default: ["Video"]
   - name: title
     label: Title
   - name: body
     label: Body
     widget: markdown
-- name: page
-  label: Page
-  folder: content/pages
-  create: true
+- name: portfolio
+  label: Portfolio
+  folder: content/pages/portfolio
+  create: false
   fields:
   - name: template
     label: Template
     widget: hidden
-    default: page
+    default: Portfolio
+  - name: path
+    label: Path
+    widget: hidden
+    default: /portfolio/
+  - name: title
+    label: Title
+  - label: Body
+    name: body
+    widget: markdown
+- name: about
+  label: About
+  folder: content/pages/about
+  create: false
+  fields:
+  - name: template
+    label: Template
+    widget: hidden
+    default: About
+  - name: path
+    label: Path
+    widget: hidden
+    default: /about/
+  - name: title
+    label: Title
+  - label: Body
+    name: body
+    widget: markdown
+- name: contact
+  label: Contact
+  folder: content/pages/contact
+  create: false
+  fields:
+  - name: template
+    label: Template
+    widget: hidden
+    default: Contact
+  - name: path
+    label: Path
+    widget: hidden
+    default: /contact/
   - name: title
     label: Title
   - label: Body

@@ -24,4 +24,10 @@ module.exports = {
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
 
   extends: ['zurgbot', 'plugin:jsx-a11y/recommended'],
+
+  rules: [
+    {
+      'react/jsx-curly-spacing': [2, { when: 'never' }]
+    }
+  ]
 };

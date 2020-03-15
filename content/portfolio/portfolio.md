@@ -1,4 +1,5 @@
 ---
+path: /portfolio/
 template: Portfolio
 title: Portfolio
 ---

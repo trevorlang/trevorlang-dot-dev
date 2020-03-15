@@ -7,16 +7,8 @@ module.exports = {
     title: 'Hoegel Media Productions Videography & Photography Portfolio'
   },
   plugins: [
-    'gatsby-plugin-resolve-src',
-    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/assets/images`
-      }
-    },
+    'gatsby-plugin-resolve-src',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -28,8 +20,32 @@ module.exports = {
         display: 'standalone',
         icon: 'src/assets/images/zurg-icon.svg'
       }
-    },
+    },  
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-offline',
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/assets/images`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/content/posts`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/content/pages`
+      }
+    },
+    'gatsby-transformer-remark'
   ]
 };
