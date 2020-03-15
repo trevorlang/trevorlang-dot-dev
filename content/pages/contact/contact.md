@@ -3,4 +3,4 @@ path: /contact/
 template: Contact
 title: Contact
 ---
-This is the contact page
+This is the contact pagee
