@@ -5,18 +5,17 @@ import Helmet from 'react-helmet';
 
 import Layout from 'components/Layout/Layout';
 
-const PortfolioPage = ({ data }) => {
+const PortfolioPage = ({data}) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const { title, date } = frontmatter;
   return (
     <Layout pageName="portfolio-page">
       <Helmet>
-        <title>{ title }</title>
+        <title>{title}</title>
       </Helmet>
-      <h1>{ title }</h1>
-      <p>{ date }</p>
-      Woop
+      <h1>{title}</h1>
+      <p>{date}</p>
       <div
         className="portfolio-page__content"
         dangerouslySetInnerHTML={{ __html: html }}

@@ -4,9 +4,12 @@ module.exports = {
     lang: 'en',
     siteType: 'website', // https://ogp.me/#types
     siteUrl: 'https://hoegelmediaproductions.com/',
-    title: 'Hoegel Media Productions Videography & Photography Portfolio'
+    title: 'Hoegel Media Productions Videography & Photography Portfolio',
+    shortTitle: 'Hoegel Media Productions',
+    shoutout: 'Designed and developed by Trevor Lang'
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     {
@@ -20,10 +23,15 @@ module.exports = {
         display: 'standalone',
         icon: 'src/assets/images/zurg-icon.svg'
       }
-    },  
-    'gatsby-plugin-netlify-cms',
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        manualInit: true,
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    },
     'gatsby-plugin-offline',
-    'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-filesystem',
