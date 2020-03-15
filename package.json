@@ -1,17 +1,19 @@
 {
-  "name": "hoegel-media-productions",
-  "description": "Hoegel Media Productions Videography & Photography Portfolio",
-  "version": "0.1.1",
-  "author": "Trevor Lang <trevor@trevorlang.dev>",
+  "name": "trevorlang-dot-dev",
+  "description": "Trevor Lang | Front End Developer & Designer",
+  "version": "0.0.1",
+  "author": "Trevor Lang <hello@trevorlang.dev>",
   "dependencies": {
     "bulma": "^0.8.0",
     "classnames": "^2.2.6",
     "deepmerge": "^4.2.2",
     "eslint-config-zurgbot": "^0.0.6",
     "gatsby": "^2.19.12",
+    "gatsby-plugin-google-tagmanager": "^2.1.26",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-netlify-cms": "^4.1.41",
     "gatsby-plugin-offline": "^3.0.34",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.28",
@@ -84,9 +86,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trevorlang/hoegel-media-productions"
+    "url": "https://github.com/trevorlang/trevorlang-dot-dev"
   },
   "bugs": {
-    "url": "https://github.com/trevorlang/hoegel-media-productions/issues"
+    "url": "https://github.com/trevorlang/trevorlang-dot-dev/issues"
   }
 }

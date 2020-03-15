@@ -28,13 +28,14 @@ const Header = React.memo(() => {
 
   const { navigationData, siteData } = data;
 
-  const navigationOrder = ['Portfolio', 'About', 'Contact'];
+  // const navigationOrder = ['Portfolio', 'About', 'Contact'];
+  const navigationOrder = [];
 
   const navigationItems = navigationOrder.map(title => {
     return navigationData.items.filter(({ frontmatter }) => {
       return frontmatter.title === title;
     })[0];
-  })
+  });
 
   return (
     <header className="header">

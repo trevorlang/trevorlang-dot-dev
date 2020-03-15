@@ -1,31 +1,28 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { FaRocket } from 'react-icons/fa';
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 
 import Layout from 'components/Layout/Layout';
-import PostList from 'components/PostList/PostList'
+import Welcome from 'components/Welcome/Welcome';
 
 const IndexPage = () => {
   return (
     <Layout pageName="home">
-      Hello world <FaRocket />
-      <PostList />
+      <Welcome />
     </Layout>
   );
 };
 
 export default IndexPage;
 
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } }) {
-      posts: nodes {
-        frontmatter {
-          path
-          title
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query {
+//     allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } }) {
+//       posts: nodes {
+//         frontmatter {
+//           path
+//           title
+//         }
+//       }
+//     }
+//   }
+// `;

@@ -2,15 +2,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #022d23;
+  font-family: Catamaran, sans-serif;
 
   &__copyright {
     margin: 0;
     padding: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 200;
+    line-height: 0.875rem;
+
+    @media (min-width: 400px) {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
   }
 
   &__shoutout {
     margin: 0;
     padding: 0.25rem;
     padding-bottom: 1rem;
+    font-size: 0.875rem;
+    font-weight: 200;
+    line-height: 0.875rem;
+
+    @media (min-width: 400px) {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
   }
 }
