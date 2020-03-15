@@ -2,4 +2,4 @@
 template: Portfolio
 title: Contact
 ---
-This is the contact page
+This is the contact pagee
