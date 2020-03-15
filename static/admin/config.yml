@@ -19,7 +19,7 @@ collections:
   - name: path
     label: Path
     widget: hidden
-    default: "{{slug}}"
+    default: "/portfolio/{{slug}}"
   - name: date
     label: Date
     widget: date
