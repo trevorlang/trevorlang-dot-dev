@@ -1,7 +1,7 @@
 {
   "name": "hoegel-media-productions",
   "description": "Hoegel Media Productions Videography & Photography Portfolio",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Trevor Lang <trevor@trevorlang.dev>",
   "dependencies": {
     "bulma": "^0.8.0",
