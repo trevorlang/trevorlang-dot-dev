@@ -1,6 +1,7 @@
 ---
 template: post
 date: 2020-03-15T00:16:53.688Z
-title: Test Post
+post_type: Video
+title: Test Video Post
 ---
 This is a test post
