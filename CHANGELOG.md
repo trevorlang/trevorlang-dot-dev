@@ -1,3 +1,6 @@
+### Version 0.1.1
+- Adding instructions to readme
+
 ### Version 0.0.0
 - Initial commit
 - Create Portfolio “test-post”
